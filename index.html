@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>スゴロク</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" media="screen" href="style.css">
+  </head>
+  <body>
+    
+    
+
+    <div id="app">
+      <h1><img id="title" src="images/image_title.png" alt="タイトル"></h1>
+      <div>
+        <div v-for="cell in cells" :class="['cell', { events: events.includes(cell) }, { one: one.includes(cell) }, { two: two.includes(cell) }, { three: three.includes(cell) }, { four: four.includes(cell) }, { five: five.includes(cell) }, { six: six.includes(cell) }, { seven: seven.includes(cell) }, { eight: eight.includes(cell) }, { nine: nine.includes(cell) }, { ten: ten.includes(cell) }, { eleven: eleven.includes(cell) }, { twelve: twelve.includes(cell) }, { thirteen: thirteen.includes(cell) }, { fourteen: fourteen.includes(cell) }, { fifteen: fifteen.includes(cell) }, { sixteen: sixteen.includes(cell) }, { seventeen: seventeen.includes(cell) }, { eighteen: eighteen.includes(cell) }, { nineteen: nineteen.includes(cell) }, { twenty: twenty.includes(cell) }, { twentyone: twentyone.includes(cell) }]">
+          {{ cell }}
+          <img v-for="character in characters" v-if="cell === character.position" :src="character.image" :alt="character.name" v-bind:class="size">
+        </div>
+      </div>
+
+      <img id="start" src="images/image_1.png" alt="スタートのコマ">
+      <img id="two" src="images/image_2.png" alt="2のコマ">
+      <img id="three" src="images/image_3.png" alt="3のコマ">
+      <img id="four" src="images/image_4.png" alt="4のコマ">
+      <img id="spider" src="images/image_5.png" alt="『刺青』のコマ">
+      <img id="six" src="images/image_6.png" alt="6のコマ">
+      <img id="chiyo" src="images/image_7.png" alt="千代のコマ">
+      <img id="eight" src="images/image_8.png" alt="8のコマ">
+      <img id="seiko" src="images/image_9.png" alt="せい子のコマ">
+      <img id="eleven" src="images/image_10.png" alt="11のコマ">
+      <img id="twelve" src="images/image_11.png" alt="12のコマ"> 
+      <img id="tomiko" src="images/image_12.png" alt="丁未子のコマ">
+      <img id="ten" src="images/image_13.png" alt="10のコマ">
+      <img id="neko" src="images/image_14.png" alt="猫のコマ">
+      <img id="matsuko" src="images/image_15.png" alt="松子のコマ">
+      <img id="sixteen" src="images/image_16.png" alt="16のコマ">
+      <img id="seventeen" src="images/image_17.png" alt="17のコマ">
+      <img id="eighteen" src="images/image_18.png" alt="18のコマ">
+      <img id="chimako" src="images/image_19.png" alt="千萬子のコマ">
+      <img id="twenty" src="images/image_20.png" alt="20のコマ">
+      <img id="goal" src="images/image_21.png" alt="ゴールのコマ">
+
+      <div class="sousa">
+        <p>
+          <img v-for="saikoro in saikoros" v-if="dice === saikoro.position" :src="saikoro.image" :alt="saikoro.name" v-bind:class="saikoro_size">{{ saikoro }}</img>
+          <img class="saikoro_default" src="images/1.png" alt="デフォルト">
+        </p>
+        <p>
+          <button v-if="isPlayerTurn && !isGameOver" @click="rollDice" class="btn btn-light">チューリップのサイコロを振る</button>
+          <button v-if="!isPlayerTurn && !isGameOver" @click="cpuRollDice" class="btn btn-secondary">　文楽人形のサイコロを振る　</button>
+        </p>
+      </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
+
+
+
+
+

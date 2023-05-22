@@ -1,0 +1,352 @@
+body {
+    margin: 60px;
+    background-image: url("images/image_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "fot-tsukuaoldmin-pr6n", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+h1 {
+    max-width: 22%;
+}
+
+.saikoro {
+    position: absolute;
+    top: 600px;
+    left: 1300px;
+    width: 80px;
+    height: 80px;
+}
+
+.saikoro_default{
+    position: absolute;
+    top: 600px;
+    left: 1300px;
+    width: 80px;
+    height: 80px;
+    z-index: -1;
+}
+
+.btn {
+    position: absolute;
+    top: 700px;
+    left: 1220px;
+}
+
+.character {
+    width: 56px;
+    height: 130px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.cell {
+    width: 200px;
+    height: 140px;
+    font-size: 0%;
+}
+
+
+/* コマの軌道 */
+
+.one {
+    position: absolute;
+    top: 40px;
+    left: 470px;
+}
+
+.two {
+    position: absolute;
+    top: 50px;
+    left: 740px;
+}
+
+.three {
+    position: absolute;
+    top: 25px;
+    left: 830px;
+}
+
+.four {
+    position: absolute;
+    top: 70px;
+    left: 940px;
+}
+
+.five {
+    position: absolute;
+    top: 15px;
+    left: 1050px;
+}
+
+.six {
+    position: absolute;
+    top: 70px;
+    left: 1250px;
+}
+
+.seven {
+    position: absolute;
+    top: 260px;
+    left: 1250px;
+}
+
+.eight {
+    position: absolute;
+    top: 400px;
+    left: 1050px;
+}
+
+.nine {
+    position: absolute;
+    top: 270px;
+    left: 780px;
+}
+
+.ten {
+    position: absolute;
+    top: 320px;
+    left: 700px;
+}
+
+.eleven {
+    position: absolute;
+    top: 320px;
+    left: 600px;
+}
+
+.twelve {
+    position: absolute;
+    top: 230px;
+    left: 330px;
+}
+
+.thirteen {
+    position: absolute;
+    top: 240px;
+    left: 240px;
+}
+
+.fourteen {
+    position: absolute;
+    top: 320px;
+    left: 90px;
+}
+
+.fifteen {
+    position: absolute;
+    top: 450px;
+    left: 50px;
+}
+
+.sixteen {
+    position: absolute;
+    top: 670px;
+    left: 250px;
+}
+
+.seventeen {
+    position: absolute;
+    top: 590px;
+    left: 335px;
+}
+
+.eighteen {
+    position: absolute;
+    top: 600px;
+    left: 550px;
+}
+
+.nineteen {
+    position: absolute;
+    top: 570px;
+    left: 660px;
+}
+
+.twenty {
+    position: absolute;
+    top: 640px;
+    left: 910px;
+}
+
+.twentyone {
+    position: absolute;
+    top: 640px;
+    left: 990px;
+}
+
+
+/* セルの画像の位置 */
+
+#start{
+    width: 10%;
+    position: absolute;
+    top: 40px;
+    left: 570px;
+    z-index: -1;
+}
+
+#two{
+    width: 5%;
+    position: absolute;
+    top: 50px;
+    left: 740px;
+    z-index: -1;
+}
+
+#three{
+    width: 6%;
+    position: absolute;
+    top: 25px;
+    left: 830px;
+    z-index: -1;
+}
+
+#four{
+    width: 6%;
+    position: absolute;
+    top: 70px;
+    left: 940px;
+    z-index: -1;
+}
+
+#spider{
+    width: 12%;
+    position: absolute;
+    top: 15px;
+    left: 1050px;
+    z-index: -1;
+}
+
+#six{
+    width: 10%;
+    position: absolute;
+    top: 70px;
+    left: 1250px;
+    z-index: -1;
+}
+
+#chiyo{
+    width: 15%;
+    position: absolute;
+    top: 260px;
+    left: 1250px;
+    z-index: -1;
+}
+
+#eight{
+    width: 14%;
+    position: absolute;
+    top: 310px;
+    left: 1050px;
+    z-index: -1;
+}
+
+#seiko{
+    width: 18%;
+    position: absolute;
+    top: 270px;
+    left: 780px;
+    z-index: -1;
+}
+
+#eleven{
+    width: 5%;
+    position: absolute;
+    top: 320px;
+    left: 700px;
+    z-index: -1;
+}
+
+#twelve{
+    max-width: 6%;
+    position: absolute;
+    top: 320px;
+    left: 600px;
+    z-index: -1;
+}
+
+#tomiko{
+    width: 17%;
+    position: absolute;
+    top: 230px;
+    left: 330px;
+    z-index: -1;
+}
+
+#ten{
+    width: 5%;
+    position: absolute;
+    top: 240px;
+    left: 240px;
+    z-index: -1;
+}
+
+#neko{
+    width: 12%;
+    position: absolute;
+    top: 320px;
+    left: 90px;
+    z-index: -1;
+}
+
+#matsuko{
+    width: 15%;
+    position: absolute;
+    top: 450px;
+    left: 50px;
+    z-index: -1;
+}
+
+#sixteen{
+    width: 5%;
+    position: absolute;
+    top: 710px;
+    left: 250px;
+    z-index: -1;
+}
+
+#seventeen{
+    width: 13%;
+    position: absolute;
+    top: 600px;
+    left: 335px;
+    z-index: -1;
+}
+
+#eighteen {
+    width: 6%;
+    position: absolute;
+    top: 600px;
+    left: 550px;
+    z-index: -1;
+}
+
+#chimako{
+    width: 17%;
+    position: absolute;
+    top: 570px;
+    left: 660px;
+    z-index: -1;
+}
+
+#twenty{
+    width: 5%;
+    position: absolute;
+    top: 640px;
+    left: 910px;
+    z-index: -1;
+}
+
+#goal{
+    width: 10%;
+    position: absolute;
+    top: 640px;
+    left: 990px;
+    z-index: -1;
+}
